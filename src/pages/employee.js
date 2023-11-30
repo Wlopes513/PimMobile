@@ -17,18 +17,18 @@ const EmployeeScreen = ({ navigation }) => {
          </Text>
          <ScrollView horizontal={true} style={styles.scrollView}>
             <View>
-               <Table borderStyle={{ borderWidth: 1, borderColor: '#C1C0B9' }}>
+               <Table borderStyle={{ borderWidth: 1, borderColor: '#ccc' }}>
                   <Row data={tableHead} widthArr={widthArr} style={styles.header} textStyle={styles.text} />
                </Table>
                <ScrollView style={styles.dataWrapper}>
-                  <Table borderStyle={{ borderWidth: 1, borderColor: '#C1C0B9' }}>
+                  <Table borderStyle={{ borderWidth: 1, borderColor: '#ccc' }}>
                      {
                         tableData.map((rowData, index) => (
                            <Row
                               key={index}
                               data={rowData}
                               widthArr={widthArr}
-                              style={[styles.row, index % 2 && { backgroundColor: '#F7F6E7' }]}
+                              style={[styles.row, index % 2 && { backgroundColor: '#fff' }]}
                               textStyle={styles.text}
                            />
                         ))
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
       marginBottom: 45,
    },
    body: {
-      display: 'flex',
-      flex: 1,
+         display: 'flex',
+         flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
       padding: 20,
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
       marginTop: 'auto',
    },
    header: { height: 50, backgroundColor: '#537791' },
-   text: { textAlign: 'center', fontWeight: '100' },
+   text: { textAlign: 'center', fontWeight: '100', color: '#000' },
    dataWrapper: { marginTop: -1 },
    row: { height: 40, backgroundColor: '#E7E6E1' },
    scrollView: {

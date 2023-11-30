@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
       borderBottomWidth: 1,
       borderBottomColor: 'gray',
       padding: 10,
+      color: '#000'
    },
    containerButtons: {
       flexDirection: 'row',

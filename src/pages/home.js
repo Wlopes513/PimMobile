@@ -45,10 +45,10 @@ const HomeScreen = ({ navigation }) => {
             </View>
          </View>
          <View style={styles.body}>
-            <Button style={styles.buttonMenu} labelStyle={{ fontSize: 20 }} mode="contained" onPress={() => { navigation.navigate('Employee'); }}>
+            <Button style={styles.buttonMenu} labelStyle={{ fontSize: 20, color: '#fff' }} mode="contained" onPress={() => { navigation.navigate('Employee'); }}>
                Funcionários
             </Button>
-            <Button style={styles.buttonMenu} labelStyle={{ fontSize: 20 }} mode="contained" onPress={() => { navigation.navigate('Login'); }}>
+            <Button style={styles.buttonMenu} labelStyle={{ fontSize: 20, color: '#fff' }} mode="contained" onPress={() => { navigation.navigate('Login'); }}>
                Sair
             </Button>
          </View>
